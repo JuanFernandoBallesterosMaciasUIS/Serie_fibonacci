@@ -4,13 +4,15 @@ print("---------------------------")
 print("------SERIE-FIBONACCI------")
 print("---------------------------")
 
-sec = 0
 n = 3
+a = 0 
+b = 1
+c = a + b
 
-while sec < 1000:
-    sec = int((1.618033989**n - (-0.6180339887**n))/5**0.5)
-    
-    print("El absu",n,"es:",sec)
+while c < 1000:
+    a = b
+    b = c
+    c = a + b
+    print("El absu",n,"es:",c)
     n = n + 1
-print("Programa terminado.")
-    
+
